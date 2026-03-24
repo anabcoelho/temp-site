@@ -55,3 +55,16 @@ else:
     # Conteúdo após o prazo (opcional)
     st.title("Não há mais nada aqui")
     st.write("Nada")
+    st.markdown(
+        """
+        <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/dQw4w9WgXcQ?autoplay=1&controls=1"
+        title="YouTube video player"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen>
+        </iframe>
+        """,
+        unsafe_allow_html=True
+    )
+
