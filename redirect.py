@@ -44,7 +44,7 @@ if agora < data_fim:
         minutos, segundos = divmod(resto, 60)
 
         countdown_placeholder.markdown(
-            f"⏳ **{dias} dias, {horas:02d}:{minutos:02d}**"
+            f"⏳ **{dias} dias, {horas:02d} horas**"
         )
 
                 
