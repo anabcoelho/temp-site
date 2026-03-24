@@ -32,24 +32,22 @@ if agora < data_fim:
     countdown_placeholder = st.empty()
 
     # Countdown ao vivo
-    while True:
+    if True:
         agora = datetime.now()
         restante = data_fim - agora
 
-        if restante.total_seconds() <= 0:
-            break
+        #if restante.total_seconds() <= 0:
+        #    break
 
         dias = restante.days
         horas, resto = divmod(restante.seconds, 3600)
         minutos, segundos = divmod(resto, 60)
 
         countdown_placeholder.markdown(
-            f"⏳ **{dias} dias, {horas:02d}:{minutos:02d}:{segundos:02d}**"
+            f"⏳ **{dias} dias, {horas:02d}:{minutos:02d}**"
         )
 
-        time.sleep(1)
-
-    st.experimental_rerun()
+                
 
 else:
     # Conteúdo após o prazo (opcional)
