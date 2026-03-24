@@ -13,7 +13,7 @@ if agora < data_fim:
 
     st.write(
         """
-        Este site será **desativado em breve**.
+        Para evitar confusões com outros projetos da ufrj, este site será **desativado em breve**.
         
         👉 Acesse o novo site:
         """
@@ -53,5 +53,5 @@ if agora < data_fim:
 
 else:
     # Conteúdo após o prazo (opcional)
-    st.title("⛔ Aviso expirado")
-    st.write("Este anúncio não está mais disponível.")
+    st.title("Não há mais nada aqui")
+    st.write("Nada")
